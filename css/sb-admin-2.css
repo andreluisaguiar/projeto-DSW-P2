@@ -11279,3 +11279,11 @@ footer.sticky-footer .copyright {
 body.sidebar-toggled footer.sticky-footer {
   width: 100%;
 }
+
+.book-card img {
+  width: 100px; /* Largura fixa */
+  height: 140px; /* Altura fixa */
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
+  border-radius: 10px; /* Bordas arredondadas */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
