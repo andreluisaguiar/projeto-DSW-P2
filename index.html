@@ -2,330 +2,75 @@
 <html lang="pt-br">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    
+    <title>Biblion | Biblioteca Digital</title>
 
-    <title>Biblioteca Digital - home</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/biblion-favicon.svg" type="image/x-icon">
 
     <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
+    <link href="libs/sb-admin-2/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900" rel="stylesheet">
 
-    <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/sb-admin-2.css">
+    <!-- Template styles-->
+    <link href="libs/sb-admin-2/css/sb-admin-2.min.css" rel="stylesheet">
 
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="styles/public/welcome.css">
 </head>
 
-<body id="page-top">
+<body class="d-flex align-items-start align-items-lg-center justify-content-center min-vh-100">
 
-    <!-- Page Wrapper -->
-    <div id="wrapper">
+    <main class="row rounded bg-light m-3 w-lg-75 shadow-lg">
 
-        <!-- Content Wrapper -->
-        <div id="content-wrapper" class="d-flex flex-column">
+        <section id="logo-container" class="d-grid col-sm-12 col-lg-5 d-grid rounded p-3 p-lg-5 bg-blue-dark">
+            <img src="assets/biblion-logo.svg" alt="Logomarca Biblion"
+                class="self-center max-w-50 max-w-lg-75 rounded object-fit-contain">
+        </section>
 
-            <!-- Main Content -->
-            <div id="content">
+        <section id="presentation-container" class="d-grid items-center col-sm-12 col-lg-7 p-4 p-lg-5">
 
-                <!-- Topbar -->
-                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+            <header>
+                <h1 class="text-center text-blue-dark fs-2xl line-h-150 font-weight-bold">Seja bem-vindo à <strong
+                        class="text-blue-light font-weight-bolder logo-text">Biblion</strong></h1>
+                <p class="mt-3 text-center text-gray fs-base mb-0 line-h-140">
+                    A leitura é a porta para novos mundos! Descubra histórias incríveis, adquira conhecimento e tenha
+                    acesso a uma biblioteca completa em suas mãos.
+                </p>
+            </header>
 
-                    <!-- Sidebar Toggle (Topbar) -->
-                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                        <i class="fa fa-bars"></i>
-                    </button>
-
-                    <!-- Topbar Search -->
-                    <form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                        <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Pesquise..."
-                                aria-label="Search" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary" type="button">
-                                    <i class="fas fa-search fa-sm"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-
-                    <!-- Topbar Navbar -->
-                    <ul class="navbar-nav ml-auto">
-
-                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
-                        <li class="nav-item dropdown no-arrow d-sm-none">
-                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-search fa-fw"></i>
-                            </a>
-                            <!-- Dropdown - Messages -->
-                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
-                                aria-labelledby="searchDropdown">
-                                <form class="form-inline mr-auto w-100 navbar-search">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control bg-light border-0 small"
-                                            placeholder="Search for..." aria-label="Search"
-                                            aria-describedby="basic-addon2">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-primary" type="button">
-                                                <i class="fas fa-search fa-sm"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </li>
-
-                        <div class="topbar-divider d-none d-sm-block"></div>
-
-                        <!-- Nav Item - User Information -->
-                        <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">User</span>
-                                <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
-                            </a>
-                            <!-- Dropdown - User Information -->
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Perfil
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Confiurações
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Registro de atividades
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Sair
-                                </a>
-                            </div>
-                        </li>
-
-                    </ul>
-
-                </nav>
-                <!-- End of Topbar -->
-
-                <!-- Begin Page Content -->
-                <div class="container-fluid">
-
-
-                    <!-- Título da página -->
-                    <h1 class="h3 mb-4 text-gray-800">Categorias de Livros</h1>
-                    
-                    <hr>
-                    <!-- Categoria 1 -->
-                    <div>
-                        <h4 class="category-title">Romance</h4>
-                        <div class="divider"></div>
-                        <div class="row text-center">
-                            <div class="col-3">
-                                <div class="book-card">
-                                    <img src="img/livro1.jpg" alt="Livro 1">
-                                </div>
-                                <div class="book-title">Livro 1</div>
-                            </div>
-                            <div class="col-3">
-                                <div class="book-card">
-                                    <img src="img/livro2.jpg" alt="Livro 2">
-                                </div>
-                                <div class="book-title">Livro 2</div>
-                            </div>
-                            <div class="col-3">
-                                <div class="book-card">
-                                    <img src="img/livro3.jpg" alt="Livro 3">
-                                </div>
-                                <div class="book-title">Livro 3</div>
-                            </div>
-                            <div class="col-3">
-                                <div class="book-card">
-                                    <img src="img/livro4.jpg" alt="Livro 4">
-                                </div>
-                                <div class="book-title">Livro 4</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <hr>
-
-                    <!-- Categoria 2 -->
-                    <div>
-                        <h4 class="category-title">Terror</h4>
-                        <div class="divider"></div>
-                        <div class="row text-center">
-                            <div class="col-3">
-                                <div class="book-card">
-                                    <img src="img/livro5.jpg" alt="Livro 1">
-                                </div>
-                                <div class="book-title">Livro 1</div>
-                            </div>
-                            <div class="col-3">
-                                <div class="book-card">
-                                    <img src="img/livro6.jpg" alt="Livro 2">
-                                </div>
-                                <div class="book-title">Livro 2</div>
-                            </div>
-                            <div class="col-3">
-                                <div class="book-card">
-                                    <img src="img/livro7.jpg" alt="Livro 3">
-                                </div>
-                                <div class="book-title">Livro 3</div>
-                            </div>
-                            <div class="col-3">
-                                <div class="book-card">
-                                    <img src="img/livrro8.jpg" alt="Livro 4">
-                                </div>
-                                <div class="book-title">Livro 4</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <hr>
-                    <!-- Categoria 3 -->
-                    <div>
-                        <h4 class="category-title">Fantasia</h4>
-                        <div class="divider"></div>
-                        <div class="row text-center">
-                            <div class="col-3">
-                                <div class="book-card">
-                                    <img src="img/livro9.jpg" alt="Livro 1">
-                                </div>
-                                <div class="book-title">Livro 1</div>
-                            </div>
-                            <div class="col-3">
-                                <div class="book-card">
-                                    <img src="img/livro10.jpg" alt="Livro 2">
-                                </div>
-                                <div class="book-title">Livro 2</div>
-                            </div>
-                            <div class="col-3">
-                                <div class="book-card">
-                                    <img src="img/livro11.jpg" alt="Livro 3">
-                                </div>
-                                <div class="book-title">Livro 3</div>
-                            </div>
-                            <div class="col-3">
-                                <div class="book-card">
-                                    <img src="img/livro12.jpg" alt="Livro 4">
-                                </div>
-                                <div class="book-title">Livro 4</div>
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-
-                    <!-- Categoria 4 -->
-                    <div>
-                        <h4 class="category-title">Mangás</h4>
-                        <div class="divider"></div>
-                        <div class="row text-center">
-                            <div class="col-3">
-                                <div class="book-card">
-                                    <img src="img/livro9.jpg" alt="Livro 1">
-                                </div>
-                                <div class="book-title">Livro 1</div>
-                            </div>
-                            <div class="col-3">
-                                <div class="book-card">
-                                    <img src="img/livro10.jpg" alt="Livro 2">
-                                </div>
-                                <div class="book-title">Livro 2</div>
-                            </div>
-                            <div class="col-3">
-                                <div class="book-card">
-                                    <img src="img/livro11.jpg" alt="Livro 3">
-                                </div>
-                                <div class="book-title">Livro 3</div>
-                            </div>
-                            <div class="col-3">
-                                <div class="book-card">
-                                    <img src="img/livro12.jpg" alt="Livro 4">
-                                </div>
-                                <div class="book-title">Livro 4</div>
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                
-                </div>
-                <!-- /.container-fluid -->
-
+            <div id="redirect-buttons" class="d-flex flex-wrap justify-content-around gap-1 mt-5 w-100">
+                <a href="./login.html" class="btn btn-login text-white bg-blue-light col-12 col-lg-5 py-2">Login</a>
+                <a href="./register.html"
+                    class="btn btn-register text-white bg-green-light col-12 col-lg-5 py-2">Cadastrar-se</a>
             </div>
-            <!-- End of Main Content -->
 
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
-                    </div>
-                </div>
-            </footer>
-            <!-- End of Footer -->
+            <hr class="mt-5 w-50">
 
-        </div>
-        <!-- End of Content Wrapper -->
-
-    </div>
-    <!-- End of Page Wrapper -->
-
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
-
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Deseja realmente sair?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Selecione "Sair" para encerrar sua seção.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-                    <a class="btn btn-primary" href="intro.html">Sair</a>
-                </div>
+            <div id="social-links" class="d-inline-flex justify-content-center gap-1 social-container">
+                <a href="#" class="btn text-gray"><i class="fab fa-x-twitter fs-lg"></i></a>
+                <a href="#" class="btn text-gray"><i class="fab fa-instagram fs-lg"></i></a>
+                <a href="#" class="btn text-gray"><i class="fab fa-linkedin fs-lg"></i></a>
             </div>
-        </div>
-    </div>
+
+        </section>
+    </main>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="libs/sb-admin-2/vendor/jquery/jquery.min.js"></script>
+    <script src="libs/sb-admin-2/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="libs/sb-admin-2/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="libs/sb-admin-2/js/sb-admin-2.min.js"></script>
 
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
-
-    <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
-
+    <!-- Fontawesome -->
+    <script src="libs/fontawesome/index.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
