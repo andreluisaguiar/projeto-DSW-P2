@@ -114,8 +114,8 @@
                 aria-labelledby="searchDropdown">
                 <form class="form-inline mr-auto w-100 navbar-search">
                   <div class="input-group">
-                    <input name="search" type="text" class="form-control bg-light border-0 small" placeholder="Buscar por..."
-                      aria-label="Search" aria-describedby="basic-addon2">
+                    <input name="search" type="text" class="form-control bg-light border-0 small"
+                      placeholder="Buscar por..." aria-label="Search" aria-describedby="basic-addon2">
                     <div class="input-group-append">
                       <button class="btn btn-primary" type="button">
                         <i class="fas fa-search fa-sm"></i>
@@ -154,16 +154,239 @@
         </nav>
       </header>
 
-      <h1 class="m-5">Favoritos</h1>
+      <!-- Favorites Cards -->
+      <section class="card shadow my-4 mx-2 mx-lg-5 d-flex flex-column align-items-center">
+        <header class="card-header w-100 py-3 px-4">
+          <h1 class="font-weight-bold text-blue-dark mb-0">Livros favoritos</h1>
+        </header>
+
+        <div class="card-body row w-100">
+
+          <div class="favorite-card-wrapper px-4 pb-4 col-lg-4">
+            <div class="favorite-book-card bg-surface-primary rounded row">
+              <div class="book-cover col-6 p-0">
+                <img class="w-100 h-100 rounded" src="./assets/images/ps-eu-te-amo.jpg" alt="Capa do livro 'PS, Eu Te Amo'">
+              </div>
+  
+              <div class="col-6 d-flex py-3 px-2 flex-column justify-content-between">
+                <h2 class="book-title text-center fs-base font-weight-bold">PS, Eu Te Amo</h2>
+
+                <dl class="book-info mx-auto fs-sm d-flex flex-column gap-0.5">
+                  <div class="d-flex align-items-center gap-0.5">
+                    <dt><i class="fas fa-user"></i></dt>
+                    <dd class="truncate book-author">Cecelia Ahern</dd>
+                  </div>
+                  <div class="d-flex align-items-center gap-0.5">
+                    <dt><i class="fas fa-book-open"></i></dt>
+                    <dd class="truncate book-publisher">Novo Conceito</dd>
+                  </div>
+                  <div class="d-flex align-items-center gap-0.5">
+                    <dt><i class="fas fa-calendar-days"></i></dt>
+                    <dd class="truncate book-year">2023</dd>
+                  </div>
+                </dl>
+
+                <div class="book-actions d-flex gap-1 justify-content-center">
+                  <button class="btn start-reading" title="Iniciar leitura"><i class="fas fa-play"></i></button>
+                  <button class="btn delete" data-toggle="modal" data-target="#deleteFavoriteModal" title="Remover dos favoritos"><i class="fas fa-trash-alt"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="favorite-card-wrapper px-4 pb-4 col-lg-4">
+            <div class="favorite-book-card bg-surface-primary rounded row">
+              <div class="book-cover col-6 p-0">
+                <img class="w-100 h-100 rounded" src="./assets/images/neuromancer.jpg" alt="Capa do livro 'Neuromancer'">
+              </div>
+  
+              <div class="col-6 d-flex py-3 px-2 flex-column justify-content-between">
+                <h2 class="book-title text-center fs-base font-weight-bold">Neuromancer</h2>
+
+                <dl class="book-info mx-auto fs-sm d-flex flex-column gap-0.5">
+                  <div class="d-flex align-items-center gap-0.5">
+                    <dt><i class="fas fa-user"></i></dt>
+                    <dd class="truncate book-author">Wiiliam Gibson</dd>
+                  </div>
+                  <div class="d-flex align-items-center gap-0.5">
+                    <dt><i class="fas fa-book-open"></i></dt>
+                    <dd class="truncate book-publisher">Aleph</dd>
+                  </div>
+                  <div class="d-flex align-items-center gap-0.5">
+                    <dt><i class="fas fa-calendar-days"></i></dt>
+                    <dd class="truncate book-year">2015</dd>
+                  </div>
+                </dl>
+
+                <div class="book-actions d-flex gap-1 justify-content-center">
+                  <button class="btn start-reading" title="Iniciar leitura"><i class="fas fa-play"></i></button>
+                  <button class="btn delete" data-toggle="modal" data-target="#deleteFavoriteModal" title="Remover dos favoritos"><i class="fas fa-trash-alt"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="favorite-card-wrapper px-4 pb-4 col-lg-4">
+            <div class="favorite-book-card bg-surface-primary rounded row">
+              <div class="book-cover col-6 p-0">
+                <img class="w-100 h-100 rounded" src="./assets/images/teto-para-dois.jpg" alt="Capa do livro 'Teto para dois'">
+              </div>
+  
+              <div class="col-6 d-flex py-3 px-2 flex-column justify-content-between">
+                <h2 class="book-title text-center fs-base font-weight-bold">Teto para dois</h2>
+
+                <dl class="book-info mx-auto fs-sm d-flex flex-column gap-0.5">
+                  <div class="d-flex align-items-center gap-0.5">
+                    <dt><i class="fas fa-user"></i></dt>
+                    <dd class="truncate book-author">Beth O´Leary</dd>
+                  </div>
+                  <div class="d-flex align-items-center gap-0.5">
+                    <dt><i class="fas fa-book-open"></i></dt>
+                    <dd class="truncate book-publisher">Intrínseca</dd>
+                  </div>
+                  <div class="d-flex align-items-center gap-0.5">
+                    <dt><i class="fas fa-calendar-days"></i></dt>
+                    <dd class="truncate book-year">2019</dd>
+                  </div>
+                </dl>
+  
+                <div class="book-actions d-flex gap-1 justify-content-center">
+                  <button class="btn start-reading" title="Iniciar leitura"><i class="fas fa-play"></i></button>
+                  <button class="btn delete" data-toggle="modal" data-target="#deleteFavoriteModal" title="Remover dos favoritos"><i class="fas fa-trash-alt"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="favorite-card-wrapper px-4 pb-4 col-lg-4">
+            <div class="favorite-book-card bg-surface-primary rounded row">
+              <div class="book-cover col-6 p-0">
+                <img class="w-100 h-100 rounded" src="./assets/images/o-hobbit.jpg" alt="Capa do livro 'O Hobbit'">
+              </div>
+  
+              <div class="col-6 d-flex py-3 px-2 flex-column justify-content-between">
+                <h2 class="book-title text-center fs-base font-weight-bold">O Hobbit</h2>
+
+                <dl class="book-info mx-auto fs-sm d-flex flex-column gap-0.5">
+                  <div class="d-flex align-items-center gap-0.5">
+                    <dt><i class="fas fa-user"></i></dt>
+                    <dd class="truncate book-author">J.R.R. Tolkien</dd>
+                  </div>
+                  <div class="d-flex align-items-center gap-0.5">
+                    <dt><i class="fas fa-book-open"></i></dt>
+                    <dd class="truncate book-publisher">HarperCollins</dd>
+                  </div>
+                  <div class="d-flex align-items-center gap-0.5">
+                    <dt><i class="fas fa-calendar-days"></i></dt>
+                    <dd class="truncate book-year">2019</dd>
+                  </div>
+                </dl>
+  
+                <div class="book-actions d-flex gap-1 justify-content-center">
+                  <button class="btn start-reading" title="Iniciar leitura"><i class="fas fa-play"></i></button>
+                  <button class="btn delete" data-toggle="modal" data-target="#deleteFavoriteModal" title="Remover dos favoritos"><i class="fas fa-trash-alt"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="favorite-card-wrapper px-4 pb-4 col-lg-4">
+            <div class="favorite-book-card bg-surface-primary rounded row">
+              <div class="book-cover col-6 p-0">
+                <img class="w-100 h-100 rounded" src="./assets/images/fahrenheit-451.png" alt="Capa do livro 'Fahrenheit, 451'">
+              </div>
+  
+              <div class="col-6 d-flex py-2 py-lg-3 px-1 px-lg-2 flex-column justify-content-between">
+                <h2 class="book-title text-center fs-base font-weight-bold">Fahrenheit, 451</h2>
+
+                <dl class="book-info mx-auto fs-sm d-flex flex-column gap-0.5">
+                  <div class="d-flex align-items-center gap-0.5">
+                    <dt><i class="fas fa-user"></i></dt>
+                    <dd class="truncate book-author">Ray Bradbury</dd>
+                  </div>
+                  <div class="d-flex align-items-center gap-0.5">
+                    <dt><i class="fas fa-book-open"></i></dt>
+                    <dd class="truncate book-publisher">Biblioteca Azul</dd>
+                  </div>
+                  <div class="d-flex align-items-center gap-0.5">
+                    <dt><i class="fas fa-calendar-days"></i></dt>
+                    <dd class="truncate book-year">2012</dd>
+                  </div>
+                </dl>
+
+                <div class="book-actions d-flex gap-1 justify-content-center">
+                  <button class="btn start-reading" title="Iniciar leitura"><i class="fas fa-play"></i></button>
+                  <button class="btn delete" data-toggle="modal" data-target="#deleteFavoriteModal" title="Remover dos favoritos"><i class="fas fa-trash-alt"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="favorite-card-wrapper px-4 pb-4 col-lg-4">
+            <div class="favorite-book-card bg-surface-primary rounded row">
+              <div class="book-cover col-6 p-0">
+                <img class="w-100 h-100 rounded" src="./assets/images/sombra-e-ossos.jpg" alt="Capa do livro 'Sombra e Ossos'">
+              </div>
+  
+              <div class="col-6 d-flex py-3 px-2 flex-column justify-content-between">
+
+                <h2 class="book-title text-center fs-base font-weight-bold">Sombra e Ossos</h2>
+
+                <dl class="book-info mx-auto fs-sm d-flex flex-column gap-0.5">
+                  <div class="d-flex align-items-center gap-0.5">
+                    <dt><i class="fas fa-user"></i></dt>
+                    <dd class="truncate book-author">Leigh Bardugo</dd>
+                  </div>
+                  <div class="d-flex align-items-center gap-0.5">
+                    <dt><i class="fas fa-book-open"></i></dt>
+                    <dd class="truncate book-publisher">Planeta Minotauro fvbtbrtrtgtgtrtr</dd>
+                  </div>
+                  <div class="d-flex align-items-center gap-0.5">
+                    <dt><i class="fas fa-calendar-days"></i></dt>
+                    <dd class="truncate book-year">2021</dd>
+                  </div>
+                </dl>
+
+              
+                <div class="book-actions d-flex gap-1 justify-content-center">
+                  <button class="btn start-reading" title="Iniciar leitura"><i class="fas fa-play"></i></button>
+                  <button class="btn delete" data-toggle="modal" data-target="#deleteFavoriteModal" title="Remover dos favoritos"><i class="fas fa-trash-alt"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
     </main>
   </div>
 
 
 
   <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded d-none d-lg-block" href="#page-top">
+  <!--a class="scroll-to-top rounded d-none d-lg-block" href="#page-top">
     <i class="fas fa-angle-up"></i>
-  </a>
+  </a-->
+
+    <!-- Delete Favorite Modal-->
+    <div class="modal fade" id="deleteFavoriteModal" tabindex="-1" role="dialog" aria-labelledby="deleteFavoriteModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="deleteFavoriteModalLabel">Remover dos Favoritos</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Tem certeza que deseja remover esse livro dos favoritos?</div>
+        <div class="modal-footer">
+          <button class="btn btn-danger" type="button" data-dismiss="modal">Cancelar</button>
+          <button class="btn btn-primary" type="button" data-dismiss="modal">Confirmar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Logout Modal-->
   <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel"

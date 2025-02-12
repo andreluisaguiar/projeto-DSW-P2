@@ -178,6 +178,11 @@
 }
 
 @media (width >= 992px) {
+
+  .w-lg-50 {
+    width: 50%;
+  }
+
   .w-lg-75 {
     width: 75%;
   }
