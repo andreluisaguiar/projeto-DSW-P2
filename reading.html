@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Biblion | Leitura - Livro 1</title>
+  <title>Biblion | Leitura - PS, Eu Te Amo</title>
 
   <!-- Favicon -->
   <link rel="icon" href="assets/biblion-favicon.svg" type="image/x-icon">
@@ -24,7 +24,7 @@
   <link href="libs/sb-admin-2/css/sb-admin-2.css" rel="stylesheet">
 
   <!-- Custom styles-->
-  <link href="styles/private/rreading.css" rel="stylesheet">
+  <link href="styles/private/reading.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -114,8 +114,8 @@
                 aria-labelledby="searchDropdown">
                 <form class="form-inline mr-auto w-100 navbar-search">
                   <div class="input-group">
-                    <input name="search" type="text" class="form-control bg-light border-0 small" placeholder="Buscar por..."
-                      aria-label="Search" aria-describedby="basic-addon2">
+                    <input name="search" type="text" class="form-control bg-light border-0 small"
+                      placeholder="Buscar por..." aria-label="Search" aria-describedby="basic-addon2">
                     <div class="input-group-append">
                       <button class="btn btn-primary" type="button">
                         <i class="fas fa-search fa-sm"></i>
@@ -154,16 +154,15 @@
         </nav>
       </header>
 
-      <h1 class="m-5">Leitura - Livro 1</h1>
+      <section id="reader-container" class="container-fluid px-2 px-lg-5 py-3 d-flex justify-content-center">
+
+        <iframe id="book-reader" class="w-100" src="./books/ps-eu-te-amo.pdf" frameborder="0">
+        </iframe>
+
+      </section>
+
     </main>
   </div>
-
-
-
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded d-none d-lg-block" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
 
   <!-- Logout Modal-->
   <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel"
@@ -197,6 +196,7 @@
 
   <!-- Fontawesome -->
   <script src="libs/fontawesome/index.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
