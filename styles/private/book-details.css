@@ -3,9 +3,6 @@
 /* specific styles */
 
 .book-container {
-  border-radius: 0.75rem;
-  box-shadow: 0rem 0.25rem 1.25rem rgba(0, 0, 0, 0.2);
-
   & .book-cover {
     aspect-ratio: 2 / 3;
     border-radius: 0.375rem;

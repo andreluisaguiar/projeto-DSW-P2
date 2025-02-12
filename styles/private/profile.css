@@ -29,8 +29,8 @@ form {
   }
 
 
-  & .btn.bg-blue-dark:hover {
-    background-color: var(--blue-hover);
+  & .btn:hover {
+    background-color: var(--blue-dark);
   }
 
 }

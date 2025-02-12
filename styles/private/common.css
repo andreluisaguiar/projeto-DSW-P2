@@ -82,7 +82,7 @@ aside {
 .card-body,
 .modal-body,
 .modal-footer {
-  background-color: var(--surface-secondary);
+  background: linear-gradient(135deg, var(--surface-secondary), var(--surface-tertiary));
 }
 
 

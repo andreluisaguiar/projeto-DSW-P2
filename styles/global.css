@@ -20,8 +20,17 @@
   --orange-light: #F2994A;
 
   /* dark colors */
-  --blue-dark: #1E3A5F;
+  --blue-dark: #003366; 
+
+  /* highlight colors */
+  --blue-highlight: #007bff;
+  --blue-highlight-hover: #0056b3;
+  --red-highlight: #dc3545 ;
+  --red-highlight-hover: #b52b3b;
   
+
+
+
   /* hover colors */
   --blue-hover: #1B74A3;
   --green-hover: #1E8E47;
