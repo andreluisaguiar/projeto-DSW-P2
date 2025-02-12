@@ -3,8 +3,6 @@
 /* specific styles */
 
 .book-container {
-  background: linear-gradient(135deg, var(--surface-secondary), var(--surface-tertiary));
-  
   & .book-cover {
     aspect-ratio: 2 / 3;
     border-radius: 0.375rem;
